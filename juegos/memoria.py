@@ -2,23 +2,19 @@ import random
 
 def memoria():
 
-    secuencia = []
-    for i in range(5):
-        numero_generado = random.randint(1,20)
-        secuencia.append(str(numero_generado))
+    n1 = str(random.randint(1,20))
+    n2 = str(random.randint(1,20))
+    n3 = str(random.randint(1,20))
+    n4 = str(random.randint(1,20))
+    n5 = str(random.randint(1,20))
 
-    print(f'Memoriza la siguiente secuencia: {secuencia[0]}, {secuencia[1]}, {secuencia[2]}, {secuencia[3]}, {secuencia[4]}')
+    secuencia = n1 + "-" + n2 + "-" + n3 + "-" + n4 + "-" + n5
+    print(f'Memoriza la siguiente secuencia {secuencia}')
 
-    respuesta = input("Escribe la secuencia, cuida poner un espacio luego de la coma")
-    respuesta_list = respuesta.split(",")
-    posicion = 0
-    for numero_str in respuesta_list:
-        respuesta_list[posicion] = numero_str.strip(" ")
-    
-    if secuencia == respuesta_list:
-        print('Wow, tienes una memoria sorprendente, bienhecho.')
+    respuesta = input('Escribe la secuencia, separando los numeros con un guion')
+    if secuencia == respuesta:
+        print('WOW, tu memoria es increible.')
     else:
-        print('Secuencia incorrecta, intentalo de nuevo')
-        
-    memoria()
+        print('Secuencia incorrecta, intentalo de nuevo.')
+    
     pass
