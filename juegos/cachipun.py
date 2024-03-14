@@ -39,4 +39,3 @@ def cachipun():
     La computadora debe elegir una opción al azar.
     """
     pass
-cachipun()
