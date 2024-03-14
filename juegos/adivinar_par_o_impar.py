@@ -16,7 +16,7 @@ def adivinar_par_o_impar():
         numero_resultado = 'impar'
 
     if prediction == numero_resultado:
-        print(f'Felicidades, has acertado. El numero {numero_resultado} efectivamente es {numero_resultado}')
+        print(f'Felicidades, has acertado. El numero {numero_generado} efectivamente es {numero_resultado}')
 
     else:
         print(f'Lo lamento, no has acertado tu prediccion. El numero {numero_generado} era {numero_resultado}')
